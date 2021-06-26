@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurv Bajaj Portfolio</title>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">
+                <img src="img/logo.png" alt="">
+            </a>
+        </div>
+        
+        <button class="nav-toggle" aria-label="toggle nav">
+            <span class="hamburger"></span>
+        </button>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#exp" class="nav__link">My Experience</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">My Projects</a></li>
+            </ul>
+        </nav>
+        <script src="js/index.js"></script>
+
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home" >
+        <h1 class="section__title section__title--intro">
+            Hey, my name is <strong>Gurv Bajaj</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">software dev</p>
+        <img src="img/me.jpg" alt="a picture of Gurv smiling" class="intro__img">
+    </section>
+    <!-- /Introduction -->
+    
+     <!-- About me -->
+     <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who is Gurv?</h2>
+        <p class="section__subtitle section__subtitle--about">About me</p>
+        
+        <div class="about-me__body">
+            <p>I'm a 22 year old Engineering undergrad who has interests in the field of web development, python programming and blockchain development. I also have an interest in AR technology and have published an AR filter on Instagram called 'Anime Villain Waifu'. You can view all projects mentioned here on my github page.</p>
+            <p>I like to watch or play football, play videogames, or beatbox in my free time. I would love to work on projects with like minded people where we can learn and grow as we work together. </p>
+        </div>
+        
+        <img src="img/advert.png" alt="placeholder" class="about-me__img">
+     </section>
+     <!-- /About Me -->
+    
+    
+    <!-- My experience -->
+    <section class="my-exp" id="exp">
+        <h2 class="section__title section__title--exps">Here's where I've worked at</h2>
+        <div class="exps">
+            <div class="exp">
+                <h3>G2hMedtech</h3>
+                <p>A healthcare tech startup based in Noida. I am working at G2hMedtech as a Software Development intern and my key responsibilities include building the company's partner portal and blockchain development.</p>
+            </div> <!-- / experience -->
+            
+            <div class="exp">
+                <h3>Virtual Intern at JP Morgan CHASE Co</h3>
+                <p>I was enrolled in the Software Engineering Virtual Experience at JP Morgan CHASE Co. I completed practical task modules which involved establishing financial data feeds, front end web development, and data visualtion with Perspective, which was the company's proprietery software. </p>
+            </div> <!-- / experience -->
+            
+        </div> <!-- / experiences -->
+        
+        <a href="img/Gurv_Resume_Final.pdf" class="btn">My Resume</a>
+    </section>
+
+    <!-- My Projects -->
+    <section class="my-projects" id="projects">
+        <h2 class="section__title section__title--projects">My Projects</h2>
+        <p class="section__subtitle section__subtitle--projects">Here's some stuff I've built</p>
+        
+        <div class="portfolio">
+            <!-- Portfolio item 01 -->
+            <a href="project-item-1.html" class="portfolio__item fade">
+                <div class="slidenumber">1 / 4</div>
+                <img src="img/django-homepage.png" alt="" class="portfolio__img">
+                <div class="slidecaption">Django Login and Registration</div>
+            </a>
+            
+            <!-- Portfolio item 02 -->
+            <a href="project-item-2.html" id="hide_img" class="portfolio__item fade">
+                <div class="slidenumber">2 / 4</div>
+                <img src="img/blockchainmed.png" alt="" class="portfolio__img">
+                <div class="slidecaption">Medical Record Smart Contract</div>
+            </a>
+            
+            <!-- Portfolio item 03 -->
+            <a href="project-item-3.html" id="hide_img" class="portfolio__item fade">
+                <div class="slidenumber">3 / 4</div>
+                <img src="img/pythonlogo.jpg" alt="" class="portfolio__img">
+                <div class="slidecaption">Python Implementation of Bipolar AMI and B8ZS Scrambling</div>
+            </a>
+            
+            <!-- Portfolio item 04 -->
+            <a href="project-item-4.html" id="hide_img" class="portfolio__item fade">
+                <div class="slidenumber">4 / 4</div>
+                <img src="img/mec-blockchain.png" alt="" class="portfolio__img">
+                <div class="slidecaption">Using Blockchain for MEC Enhancement</div>
+            </a>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+        
+    </section>
+    
+     <!-- Footer -->
+     <footer>
+        <!-- replace with your own email address -->
+        <a href="mailto:bajajgurv@gmail.com" class="footer__link">bajajgurv@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="https://github.com/gurv234"><i class="fab fa-github"></i></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/gurv-bajaj-a9361a188/"><i class="fab fa-linkedin"></i></a></li>
+            <!-- <li class="social-list__item"><a class="social-list__link" href="twitter">c</a></li> -->
+            <li class="social-list__item"><a class="social-list__link" href="https://www.instagram.com/burgurv/"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+    <!-- /Footer -->
+</body>
+</html>

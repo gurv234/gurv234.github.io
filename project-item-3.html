@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png"  alt="">
+            </a>
+        </div>
+        
+        <button class="nav-toggle" aria-label="toggle nav">
+            <span class="hamburger"></span>
+        </button>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="index.html#exp" class="nav__link">My Experience</a></li>
+                <li class="nav__item"><a href="index.html#projects" class="nav__link">My Projects</a></li>
+            </ul>
+        </nav>
+        <script src="js/index.js"></script>
+
+    </header>
+    <!-- /Header -->
+    <section class="intro" id="home" >
+        <h1 class="section__title section__title--intro">
+            Python Implementation fo Bipolar AMI and B8ZS Scrambling Technique
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Python programming and Data Visualisation</p>
+        <img src="img/pythonlogo.jpg" alt="a picture of Gurv smiling" class="intro__img">
+    </section>
+
+    <div class="project-item-individual">
+        <p>Demonstrated Bipolar 8 Zero Substitution(B8ZS) Scrambling technique using Python.</p>
+        <p>The problem statement was to fist convert a 10 bit data stream to Bipolar Alternate Mark Inversion(AMI) and then show B8ZS Scrambling techniques.</p>
+        <p>The data visualisation was done using Matplotlib module.</p>
+        <p><a href="https://github.com/gurv234/PyB8ZS" class="project-link">View Project</a></p>
+    </div>
+
+    
+
+    
+     <!-- Footer -->
+     <footer>
+        <!-- replace with your own email address -->
+        <a href="mailto:bajajgurv@gmail.com" class="footer__link">bajajgurv@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="github"><i class="fab fa-github"></i></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="linkedin"><i class="fab fa-linkedin"></i></a></li>
+            <!-- <li class="social-list__item"><a class="social-list__link" href="twitter">c</a></li> -->
+            <li class="social-list__item"><a class="social-list__link" href="insta"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+    <!-- /Footer -->
+</body>
+</html>
